@@ -1,0 +1,268 @@
+
+@inproceedings{antenucciArtistdrivenLayeringUser2018,
+  title = {Artist-Driven Layering and User's Behaviour Impact on Recommendations in a Playlist Continuation Scenario},
+  booktitle = {Proceedings of the {{ACM Recommender Systems Challenge}} 2018 on - {{RecSys Challenge}} '18},
+  author = {Antenucci, Sebastiano and Boglio, Simone and Chioso, Emanuele and Dervishaj, Ervin and Kang, Shuwen and Scarlatti, Tommaso and Dacrema, Maurizio Ferrari},
+  year = {2018},
+  publisher = {{ACM Press}},
+  address = {{Vancouver, BC, Canada}},
+  doi = {10/ghd264},
+  abstract = {In this paper we provide an overview of the approach we used as team Creamy Fireflies for the ACM RecSys Challenge 2018. The competition, organized by Spotify, focuses on the problem of playlist continuation, that is suggesting which tracks the user may add to an existing playlist. The challenge addresses this issue in many use cases, from playlist cold start to playlists already composed by up to a hundred tracks. Our team proposes a solution based on a few well known models both content based and collaborative, whose predictions are aggregated via an ensembling step. Moreover by analyzing the underlying structure of the data, we propose a series of boosts to be applied on top of the final predictions and improve the recommendation quality. The proposed approach leverages well-known algorithms and is able to offer a high recommendation quality while requiring a limited amount of computational resources.},
+  annotation = {ZSCC: 0000016},
+  isbn = {978-1-4503-6586-4},
+  language = {en}
+}
+
+@inproceedings{chenRecsysChallenge20182018,
+  title = {Recsys Challenge 2018: Automatic Music Playlist Continuation},
+  shorttitle = {Recsys Challenge 2018},
+  booktitle = {Proceedings of the 12th {{ACM Conference}} on {{Recommender Systems}}},
+  author = {Chen, Ching-Wei and Lamere, Paul and Schedl, Markus and Zamani, Hamed},
+  year = {2018},
+  month = sep,
+  publisher = {{ACM}},
+  address = {{Vancouver British Columbia Canada}},
+  doi = {10/ggbpkw},
+  abstract = {The ACM Recommender Systems Challenge 2018 focused on automatic music playlist continuation, which is a form of the more general task of sequential recommendation. Given a playlist of arbitrary length, the challenge was to recommend up to 500 tracks that fit the target characteristics of the original playlist. For the Challenge, Spotify released a dataset of one million user-created playlists, along with associated metadata. Participants could submit their approaches in two tracks, i.e., main and creative tracks, where the former allowed teams to use solely the provided dataset and the latter allowed them to exploit publicly available external data too. In total, 113 teams submitted 1,228 runs in the main track; 33 teams submitted 239 runs in the creative track. The highest performing team in the main track achieved an R-precision of 0.2241, an NDCG of 0.3946, and an average number of recommended songs clicks of 1.784. In the creative track, an R-precision of 0.2233, an NDCG of 0.3939, and a click rate of 1.785 was realized by the best team.},
+  isbn = {978-1-4503-5901-6},
+  language = {en}
+}
+
+@inproceedings{faggioliEfficientSimilarityBased2018,
+  title = {Efficient {{Similarity Based Methods For The Playlist Continuation Task}}},
+  booktitle = {Proceedings of the {{ACM Recommender Systems Challenge}} 2018 on - {{RecSys Challenge}} '18},
+  author = {Faggioli, Guglielmo and Polato, Mirko and Aiolli, Fabio},
+  year = {2018},
+  publisher = {{ACM Press}},
+  address = {{Vancouver, BC, Canada}},
+  doi = {10/ghd27k},
+  abstract = {In this paper, the pipeline we used in the RecSys challenge 2018 is reported. We present content-based and collaborative filtering approaches for the definition of the similarity matrices for top-500 recommendation task. In particular, the task consisted in recommending songs to add to partial playlists. Different methods have been proposed depending on the number of available songs in a playlist. We show how an hybrid approach which exploits both content-based and collaborative filtering is effective in this task. Specifically, information derived by the playlist titles helped to tackle the cold-start issue.},
+  isbn = {978-1-4503-6586-4},
+  language = {en}
+}
+
+@inproceedings{ferraroAutomaticPlaylistContinuation2018,
+  title = {Automatic Playlist Continuation Using a Hybrid Recommender System Combining Features from Text and Audio},
+  booktitle = {Proceedings of the {{ACM Recommender Systems Challenge}} 2018 on - {{RecSys Challenge}} '18},
+  author = {Ferraro, Andres and Bogdanov, Dmitry and Yoon, Jisang and Kim, KwangSeob and Serra, Xavier},
+  year = {2018},
+  publisher = {{ACM Press}},
+  address = {{Vancouver, BC, Canada}},
+  doi = {10/ghd262},
+  abstract = {The ACM RecSys Challenge 2018 focuses on music recommendation in the context of automatic playlist continuation. In this paper, we describe our approach to the problem and the final hybrid system that was submitted to the challenge by our team Cocoplaya. This system consists in combining the recommendations produced by two different models using ranking fusion. The first model is based on Matrix Factorization and it incorporates information from tracks' audio and playlist titles. The second model generates recommendations based on typical track co-occurrences considering their proximity in the playlists. The proposed approach is efficient and achieves a good overall performance, with our model ranked 4th on the creative track of the challenge leaderboard.},
+  annotation = {ZSCC: 0000004},
+  isbn = {978-1-4503-6586-4},
+  language = {en}
+}
+
+@inproceedings{kallumadiLineSandRecommendation2018,
+  title = {A {{Line}} in the {{Sand}}: {{Recommendation}} or {{Ad}}-Hoc {{Retrieval}}? {{Overview}} of {{RecSys Challenge}} 2018 {{Submission}} by {{Team BachPropagate}}},
+  shorttitle = {A {{Line}} in the {{Sand}}},
+  booktitle = {Proceedings of the {{ACM Recommender Systems Challenge}} 2018 on - {{RecSys Challenge}} '18},
+  author = {Kallumadi, Surya and Mitra, Bhaskar and Iofciu, Tereza},
+  year = {2018},
+  publisher = {{ACM Press}},
+  address = {{Vancouver, BC, Canada}},
+  doi = {10/ghd267},
+  abstract = {The popular approaches to recommendation and ad-hoc retrieval tasks are largely distinct in the literature. In this work, we argue that many recommendation problems can also be cast as ad-hoc retrieval tasks. To demonstrate this, we build a solution for the RecSys 2018 Spotify challenge by combining standard ad-hoc retrieval models and using popular retrieval tools sets. We draw a parallel between the playlist continuation task and the task of finding good expansion terms for queries in ad-hoc retrieval, and show that standard pseudo-relevance feedback can be effective as a collaborative filtering approach. We also use ad-hoc retrieval for content-based recommendation by treating the input playlist title as a query and associating all candidate tracks with meta-descriptions extracted from the background data. The recommendations from these two approaches are further supplemented by a nearest neighbor search based on track embeddings learned by a popular neural model. Our final ranked list of recommendations is produced by a learning to rank model. Our proposed solution using ad-hoc retrieval models achieved a competitive performance on the music recommendation task at RecSys 2018 challenge\textemdash finishing at rank 7 out of 112 participating teams and at rank 5 out of 31 teams for the main and the creative tracks, respectively.},
+  annotation = {ZSCC: 0000001},
+  isbn = {978-1-4503-6586-4},
+  language = {en}
+}
+
+@inproceedings{kayaAutomaticPlaylistContinuation2018,
+  title = {Automatic {{Playlist Continuation}} Using {{Subprofile}}-{{Aware Diversification}}},
+  booktitle = {Proceedings of the {{ACM Recommender Systems Challenge}} 2018 on - {{RecSys Challenge}} '18},
+  author = {Kaya, Mesut and Bridge, Derek},
+  year = {2018},
+  publisher = {{ACM Press}},
+  address = {{Vancouver, BC, Canada}},
+  doi = {10/ghd26z},
+  abstract = {The ACM RecSys Challenge 2018 involves the task of automatic playlist continuation (APC), aiming to help users to create and extend their own music playlists. In this paper, we explain teamrozik's approach to the Challenge. Our approach to APC is twofold: ColdStart-APC for short playlists and SPAD-APC for other playlists. Cold-Start-APC is a rudimentary popularity-based recommender. SPAD-APC treats playlists as if they were user profiles. It builds an implicit matrix factorization model to generate initial recommendations. But it re-ranks those recommendations using SubProfileAware Diversification (SPAD), which is a personalized intent-aware diversification method. The SPAD re-ranking method aims to ensure that the final set of recommendations covers different interests or tastes in the playlists of the users, which we refer to as subprofiles. We show that such subprofiles do exist within playlists and we show that the SPAD method achieves higher precision than matrix factorization alone.},
+  annotation = {ZSCC: 0000003},
+  isbn = {978-1-4503-6586-4},
+  language = {en}
+}
+
+@inproceedings{kelenEfficientKNNPlaylist2018,
+  title = {Efficient {{K}}-{{NN}} for {{Playlist Continuation}}},
+  booktitle = {Proceedings of the {{ACM Recommender Systems Challenge}} 2018 on - {{RecSys Challenge}} '18},
+  author = {Kelen, Domokos M. and Berecz, D{\'a}niel and B{\'e}res, Ferenc and Bencz{\'u}r, Andr{\'a}s A.},
+  year = {2018},
+  publisher = {{ACM Press}},
+  address = {{Vancouver, BC, Canada}},
+  doi = {10/ghd266},
+  abstract = {We present our solution for the RecSys Challenge 2018, which reached 9th place on the main track leaderboard of the competition. We developed a light-weight playlist-based nearest neighbor method to complete music playlists by using the playlist-track matrix along with track and playlist metadata. Our solution uses a number of domain specific heuristics for improving recommendation quality. One major advantage of our approach is its low computational resource use: our final solution can be computed on a traditional desktop computer within an hour.},
+  annotation = {ZSCC: 0000002},
+  isbn = {978-1-4503-6586-4},
+  language = {en}
+}
+
+@inproceedings{kimSeedFreeMusicPlaylist2018,
+  title = {Towards {{Seed}}-{{Free Music Playlist Generation}}: {{Enhancing Collaborative Filtering}} with {{Playlist Title Information}}},
+  shorttitle = {Towards {{Seed}}-{{Free Music Playlist Generation}}},
+  booktitle = {Proceedings of the {{ACM Recommender Systems Challenge}} 2018 on - {{RecSys Challenge}} '18},
+  author = {Kim, Jaehun and Won, Minz and Liem, Cynthia C. S. and Hanjalic, Alan},
+  year = {2018},
+  publisher = {{ACM Press}},
+  address = {{Vancouver, BC, Canada}},
+  doi = {10/ghd27j},
+  abstract = {In this paper, we propose a hybrid Neural Collaborative Filtering (NCF) model trained with a multi-objective function to achieve a music playlist generation system. The proposed approach focuses particularly on the cold-start problem (playlists with no seed tracks) and uses a text encoder employing a Recurrent Neural Network (RNN) to exploit textual information given by the playlist title. To accelerate the training, we first apply Weighted Regularized Matrix Factorization (WRMF) as the basic recommendation model to prelearn latent factors of playlists and tracks. These factors then feed into the proposed multi-objective optimization that also involves embeddings of playlist titles. The experimental study indicates that the proposed approach can effectively suggest suitable music tracks for a given playlist title, compensating poor original recommendation results made on empty playlists by the WRMF model.},
+  isbn = {978-1-4503-6586-4},
+  language = {en}
+}
+
+@inproceedings{ludewigEffectiveNearestNeighborMusic2018,
+  title = {Effective {{Nearest}}-{{Neighbor Music Recommendations}}},
+  booktitle = {Proceedings of the {{ACM Recommender Systems Challenge}} 2018 on - {{RecSys Challenge}} '18},
+  author = {Ludewig, Malte and Kamehkhosh, Iman and Landia, Nick and Jannach, Dietmar},
+  year = {2018},
+  publisher = {{ACM Press}},
+  address = {{Vancouver, BC, Canada}},
+  doi = {10/ghd263},
+  abstract = {Automated recommendations for next tracks to listen to or to include in a playlist are a common feature on modern music platforms. Correspondingly, a variety of algorithmic approaches for determining tracks to recommend have been proposed in academic research. The most sophisticated among them are often based on conceptually complex learning techniques which can also require substantial computational resources or special-purpose hardware like GPUs. Recent research, however, showed that conceptually more simple techniques, e.g., based on nearest-neighbor schemes, can represent a viable alternative to such techniques in practice.},
+  isbn = {978-1-4503-6586-4},
+  language = {en}
+}
+
+@inproceedings{montiEnsembleApproachRecurrent2018,
+  title = {An {{Ensemble Approach}} of {{Recurrent Neural Networks}} Using {{Pre}}-{{Trained Embeddings}} for {{Playlist Completion}}},
+  booktitle = {Proceedings of the {{ACM Recommender Systems Challenge}} 2018 on - {{RecSys Challenge}} '18},
+  author = {Monti, Diego and Palumbo, Enrico and Rizzo, Giuseppe and Lisena, Pasquale and Troncy, Rapha{\"e}l and Fell, Michael and Cabrio, Elena and Morisio, Maurizio},
+  year = {2018},
+  publisher = {{ACM Press}},
+  address = {{Vancouver, BC, Canada}},
+  doi = {10/ghd27h},
+  abstract = {This paper describes the approach of the D2KLab team to the RecSys Challenge 2018 that focuses on the task of playlist completion. We propose an ensemble strategy of different recurrent neural networks leveraging pre-trained embeddings representing tracks, artists, albums, and titles as inputs. We also use lyrics from which we extract semantic and stylistic features that we fed into the network for the creative track. The RNN learns a probabilistic model from the sequences of items in the playlist, which is then used to predict the most likely tracks to be added to the playlist. Concerning the playlists without tracks, we implemented a fall-back strategy called Title2Rec that generates recommendations using only the playlist title. We optimized the RNN, Title2Rec, and the ensemble approach on a validation set, tuning hyper-parameters such as the optimizer algorithm, the learning rate, and the generation strategy. This approach is effective in predicting tracks for a playlist and flexible to include diverse types of inputs, but it is also computationally demanding in the training phase.},
+  isbn = {978-1-4503-6586-4},
+  language = {en}
+}
+
+@inproceedings{rubtsovHybridTwostageRecommender2018,
+  title = {A Hybrid Two-Stage Recommender System for Automatic Playlist Continuation},
+  booktitle = {Proceedings of the {{ACM Recommender Systems Challenge}} 2018 on - {{RecSys Challenge}} '18},
+  author = {Rubtsov, Vasiliy and Kamenshchikov, Mikhail and Valyaev, Ilya and Leksin, Vasiliy and Ignatov, Dmitry I.},
+  year = {2018},
+  publisher = {{ACM Press}},
+  address = {{Vancouver, BC, Canada}},
+  doi = {10/ghd27m},
+  abstract = {In this paper, we provide the solution for RecSys Challenge 2018 by our Avito team, which obtained the 3rd place in main track. The goal of the competition was to recommend music tracks for automatic playlist continuation. As a part of this challenge, Spotify released a large public dataset, which allowed us to train a rather complex algorithm. Our approach consists of two stages: collaborative filtering for candidate selection and gradient boosting for final prediction. The combination of these two models performed well with the playlist and track metadata given.},
+  isbn = {978-1-4503-6586-4},
+  language = {en}
+}
+
+@article{schedlCurrentChallengesVisions2018,
+  title = {Current {{Challenges}} and {{Visions}} in {{Music Recommender Systems Research}}},
+  author = {Schedl, Markus and Zamani, Hamed and Chen, Ching-Wei and Deldjoo, Yashar and Elahi, Mehdi},
+  year = {2018},
+  month = jun,
+  volume = {7},
+  issn = {2192-6611, 2192-662X},
+  doi = {10/gftct3},
+  abstract = {Music recommender systems (MRS) have experienced a boom in recent years, thanks to the emergence and success of online streaming services, which nowadays make available almost all music in the world at the user's ngertip. While today's MRS considerably help users to nd interesting music in these huge catalogs, MRS research is still facing substantial challenges. In particular when it comes to build, incorporate, and evaluate recommendation strategies that integrate information beyond simple user\textendash item interactions or content-based descriptors, but dig deep into the very essence of listener needs, preferences, and intentions, MRS research becomes a big endeavor and related publications quite sparse.},
+  annotation = {ZSCC: 0000114},
+  archivePrefix = {arXiv},
+  eprint = {1710.03208},
+  eprinttype = {arxiv},
+  journal = {International Journal of Multimedia Information Retrieval},
+  language = {en},
+  number = {2}
+}
+
+@inproceedings{vaglianoUsingAdversarialAutoencoders2018,
+  title = {Using {{Adversarial Autoencoders}} for {{Multi}}-{{Modal Automatic Playlist Continuation}}},
+  booktitle = {Proceedings of the {{ACM Recommender Systems Challenge}} 2018 on - {{RecSys Challenge}} '18},
+  author = {Vagliano, Iacopo and Galke, Lukas and Mai, Florian and Scherp, Ansgar},
+  year = {2018},
+  publisher = {{ACM Press}},
+  address = {{Vancouver, BC, Canada}},
+  doi = {10/ghd265},
+  abstract = {The task of automatic playlist continuation is generating a list of recommended tracks that can be added to an existing playlist. By suggesting appropriate tracks, i. e., songs to add to a playlist, a recommender system can increase the user engagement by making playlist creation easier, as well as extending listening beyond the end of current playlist. The ACM Recommender Systems Challenge 2018 focuses on such task. Spotify released a dataset of playlists, which includes a large number of playlists and associated track listings. Given a set of playlists from which a number of tracks have been withheld, the goal is predicting the missing tracks in those playlists. We participated in the challenge as the team Unconscious Bias and, in this paper, we present our approach. We extend adversarial autoencoders to the problem of automatic playlist continuation. We show how multiple input modalities, such as the playlist titles as well as track titles, artists and albums, can be incorporated in the playlist continuation task.},
+  annotation = {ZSCC: 0000001},
+  isbn = {978-1-4503-6586-4},
+  language = {en}
+}
+
+@inproceedings{vanniedekRandomWalkRestart2018,
+  title = {Random {{Walk}} with {{Restart}} for {{Automatic Playlist Continuation}} and {{Query}}-{{Specific Adaptations}}},
+  booktitle = {Proceedings of the {{ACM Recommender Systems Challenge}} 2018 on - {{RecSys Challenge}} '18},
+  author = {{van Niedek}, Timo and {de Vries}, Arjen P.},
+  year = {2018},
+  publisher = {{ACM Press}},
+  address = {{Vancouver, BC, Canada}},
+  doi = {10/ghd27g},
+  abstract = {This Recsys Challenge paper by Team Radboud presents a solution to the automatic playlist continuation (APC) task using random walks, inspired by Pinterest's Pixie [5] and earlier work by the second author [4]. The generic idea of recommendation using random walks is specialised to the APC task by the specific choices made to represent playlists and tracks as a graph and by the design of pruning methods that reduce the scope of the random walks. Playlist characteristics are captured through track metadata, audio features and playlist title. Scoping of the random walks considers 1) title-based prefiltering, 2) title-based retrieval, 3) feature-based prefiltering and 4) degree pruning. Our methods are effective in reducing popularity bias, a common issue in related methods. The best performing recommender uses a hybrid degree pruning techinque, for which we report an R-Precision of 0.1982, an NDCG of 0.3564 and a Recommended Songs Clicks of 2.2934, achieving 21st place on the main leaderboard and 9th on the creative leaderboard of the RecSys Challenge 2018. For a more complete description of the approach and evaluation results we refer to the first author's Master's Thesis [14].},
+  isbn = {978-1-4503-6586-4},
+  language = {en}
+}
+
+@inproceedings{volkovsTwostageModelAutomatic2018,
+  title = {Two-Stage {{Model}} for {{Automatic Playlist Continuation}} at {{Scale}}},
+  booktitle = {Proceedings of the {{ACM Recommender Systems Challenge}} 2018 on - {{RecSys Challenge}} '18},
+  author = {Volkovs, Maksims and Rai, Himanshu and Cheng, Zhaoyue and Wu, Ga and Lu, Yichao and Sanner, Scott},
+  year = {2018},
+  publisher = {{ACM Press}},
+  address = {{Vancouver, BC, Canada}},
+  doi = {10/ghd269},
+  abstract = {Automatic playlist continuation is a prominent problem in music recommendation. Significant portion of music consumption is now done online through playlists and playlist-like online radio stations. Manually compiling playlists for consumers is a highly time consuming task that is difficult to do at scale given the diversity of tastes and the large amount of musical content available. Consequently, automated playlist continuation has received increasing attention recently [1, 7, 11]. The 2018 ACM RecSys Challenge [14] is dedicated to evaluating and advancing current state-of-the-art in automated playlist continuation using a large scale dataset released by Spotify. In this paper we present our approach to this challenge. We use a two-stage model where the first stage is optimized for fast retrieval, and the second stage re-ranks retrieved candidates maximizing the accuracy at the top of the recommended list. Our team vl6 achieved 1'st place in both main and creative tracks out of over 100 teams.},
+  isbn = {978-1-4503-6586-4},
+  language = {en}
+}
+
+@inproceedings{yangMMCFMultimodalCollaborative2018,
+  title = {{{MMCF}}: {{Multimodal Collaborative Filtering}} for {{Automatic Playlist Continuation}}},
+  shorttitle = {{{MMCF}}},
+  booktitle = {Proceedings of the {{ACM Recommender Systems Challenge}} 2018 on - {{RecSys Challenge}} '18},
+  author = {Yang, Hojin and Jeong, Yoonki and Choi, Minjin and Lee, Jongwuk},
+  year = {2018},
+  publisher = {{ACM Press}},
+  address = {{Vancouver, BC, Canada}},
+  doi = {10/ghd27d},
+  abstract = {Automatic playlist continuation (APC) is a common task of music recommender systems, enabling the automatic discovery of tracks that fit into a given playlist. To recommend a coherent list of tracks to users, it is important to capture the underlying characteristics of a playlist. Unfortunately, existing recommender models suffer from several problems: (1) They tend to misinterpret tracks that appear rarely in a playlist (popularity bias) (2) they cannot extend user's playlist that consists of very few tracks (cold-start problem), and (3) they neglect the context of a playlist such as the sequence of tracks or playlist title (context-aware continuation). This year's ACM RecSys Challenge'18 aimed to find new solutions to tackle these problems.},
+  isbn = {978-1-4503-6586-4},
+  language = {en}
+}
+
+@article{zamaniAnalysisApproachesTaken2019,
+  title = {An {{Analysis}} of {{Approaches Taken}} in the {{ACM RecSys Challenge}} 2018 for {{Automatic Music Playlist Continuation}}},
+  author = {Zamani, Hamed and Schedl, Markus and Lamere, Paul and Chen, Ching-Wei},
+  year = {2019},
+  month = aug,
+  abstract = {The ACM Recommender Systems Challenge 2018 focused on the task of automatic music playlist continuation, which is a form of the more general task of sequential recommendation. Given a playlist of arbitrary length with some additional meta-data, the task was to recommend up to 500 tracks that fit the target characteristics of the original playlist. For the RecSys Challenge, Spotify released a dataset of one million user-generated playlists. Participants could compete in two tracks, i.e., main and creative tracks. Participants in the main track were only allowed to use the provided training set, however, in the creative track, the use of external public sources was permitted. In total, 113 teams submitted 1,228 runs to the main track; 33 teams submitted 239 runs to the creative track. The highest performing team in the main track achieved an R-precision of 0.2241, an NDCG of 0.3946, and an average number of recommended songs clicks of 1.784. In the creative track, an R-precision of 0.2233, an NDCG of 0.3939, and a click rate of 1.785 was obtained by the best team. This article provides an overview of the challenge, including motivation, task definition, dataset description, and evaluation. We further report and analyze the results obtained by the top performing teams in each track and explore the approaches taken by the winners. We finally summarize our key findings, discuss generalizability of approaches and results to domains other than music, and list the open avenues and possible future directions in the area of automatic playlist continuation.},
+  annotation = {ZSCC: 0000011},
+  archivePrefix = {arXiv},
+  eprint = {1810.01520},
+  eprinttype = {arxiv},
+  journal = {arXiv:1810.01520 [cs]},
+  language = {en},
+  primaryClass = {cs}
+}
+
+@inproceedings{zhaoTrailMixEnsembleRecommender2018,
+  title = {{{TrailMix}}: {{An Ensemble Recommender System}} for {{Playlist Curation}} and {{Continuation}}},
+  shorttitle = {{{TrailMix}}},
+  booktitle = {Proceedings of the {{ACM Recommender Systems Challenge}} 2018 on - {{RecSys Challenge}} '18},
+  author = {Zhao, Xing and Song, Qingquan and Caverlee, James and Hu, Xia},
+  year = {2018},
+  publisher = {{ACM Press}},
+  address = {{Vancouver, BC, Canada}},
+  doi = {10/ghd268},
+  annotation = {ZSCC: 0000002},
+  isbn = {978-1-4503-6586-4},
+  language = {en}
+}
+
+@inproceedings{zhuAutomaticMusicPlaylist2018,
+  title = {Automatic {{Music Playlist Continuation}} via {{Neighbor}}-Based {{Collaborative Filtering}} and {{Discriminative Reweighting}}/{{Reranking}}},
+  booktitle = {Proceedings of the {{ACM Recommender Systems Challenge}} 2018 on   - {{RecSys Challenge}} '18},
+  author = {Zhu, Lin and He, Bowen and Ji, Mengxin and Ju, Cheng and Chen, Yihong},
+  year = {2018},
+  publisher = {{ACM Press}},
+  address = {{Vancouver, BC, Canada}},
+  doi = {10/ghd27b},
+  abstract = {The focus of RecSys Challenge 2018 is automatic playlist continuation (APC), which refers to the task of adding one or more tracks to a playlist in a manner that does not alter the intended characteristics of the original playlist. This paper presents our approach to this challenge. We adopted neighbor-based collaborative filtering approaches since they are able to deal with large datasets in an efficient and effective way, and have previously been shown to perform well on recommendation problems with similar characteristics. We show that by choosing an appropriate similarity function that properly accounts for the list-song similarities, simple neighbor-based methods can still achieve highly competitive performance on the MPD data, meanwhile, by using a set of techniques that discriminantly finetune the recommendation lists produced by neighbor-based methods, the overall recommendation accuracy can be improved significantly. By using the proposed approach, our team HAIR was able to attain the 6th place in the competition. We have open-sourced our implementation on https://github.com/LauraBowenHe/ Recsys-Spotify-2018-challenge.},
+  isbn = {978-1-4503-6586-4},
+  language = {en}
+}
+
+
