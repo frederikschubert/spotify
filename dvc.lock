@@ -1,0 +1,10 @@
+mpd2text:
+  cmd: python -m scripts.mpd2text
+  deps:
+  - path: data/nobackup/dataset/data
+    md5: 92a0865eda50bd25b500eaa34f5f2bab.dir
+  - path: scripts/mpd2text.py
+    md5: eceffe9a962db1c1d960b490628ef564
+  outs:
+  - path: output
+    md5: e0708995e3d4db747d8bf3748285857f.dir
