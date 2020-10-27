@@ -25,6 +25,7 @@ def playlist2text(playlist: Playlist):
     line = "<BOS>"
     line += ' "' + playlist.name + '":'
     for track in playlist.tracks:
+        line += ' "' + track.artist_name + '" -'
         line += ' "' + track.track_name + '"'
     line += "<EOS>\n"
     return line

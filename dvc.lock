@@ -4,7 +4,7 @@ mpd2text:
   - path: data/nobackup/dataset/data
     md5: 92a0865eda50bd25b500eaa34f5f2bab.dir
   - path: scripts/mpd2text.py
-    md5: eceffe9a962db1c1d960b490628ef564
+    md5: 56965a89371dc9e70501c5f2c6ecfa0d
   outs:
   - path: output
-    md5: e0708995e3d4db747d8bf3748285857f.dir
+    md5: 4c8fa3dca90a6ec405e56bc90750535f.dir
