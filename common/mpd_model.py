@@ -16,20 +16,35 @@ class SliceInfo(DataClassJsonMixin):
 class Track(DataClassJsonMixin):
     track_name: str
     track_uri: str
-    album_name: str
-    album_uri: str
-    artist_name: str
-    artist_uri: str
-    duration_ms: int
-    pos: int
+    album_name: Optional[str] = None
+    album_uri: Optional[str] = None
+    artist_name: Optional[str] = None
+    artist_uri: Optional[str] = None
+    duration_ms: Optional[str] = None
+    pos: Optional[str] = None
+
+    def __eq__(self, o: object) -> bool:
+        if isinstance(o, Track):
+            return (
+                o.track_uri == self.track_uri
+                and o.album_uri == self.album_uri
+                and o.artist_uri == self.artist_uri
+            )
+        return False
+
+    def __hash__(self) -> int:
+        return hash(self.track_uri)
+
+    def __str__(self):
+        return self.track_name
 
 
 @dataclass
 class Playlist(DataClassJsonMixin):
     pid: int
-    name: str
-    collaborative: bool
     tracks: List[Track]
+    name: str = ""
+    collaborative: bool = False
     description: Optional[str] = None
     modified_at: Optional[int] = None
     num_artists: Optional[int] = None
@@ -42,5 +57,5 @@ class Playlist(DataClassJsonMixin):
 
 @dataclass
 class MPDSlice(DataClassJsonMixin):
-    info: SliceInfo
     playlists: List[Playlist]
+    info: Optional[SliceInfo] = None

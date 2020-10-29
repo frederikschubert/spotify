@@ -167,7 +167,7 @@ def get_dataset(
             tokenizer=tokenizer,
             file_path=file_path,
             block_size=args.block_size,
-            length=999000, # TODO(frederik): read via wc -l
+            length=999000,  # TODO(frederik): read via wc -l
         )
     else:
         return TextDataset(

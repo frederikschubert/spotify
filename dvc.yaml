@@ -1,8 +1,0 @@
-stages:
-  mpd2text:
-    cmd: python -m scripts.mpd2text
-    deps:
-      - data/nobackup/dataset/data
-      - scripts/mpd2text.py
-    outs:
-      - output
