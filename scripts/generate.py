@@ -25,7 +25,7 @@ def create_prompts(
         prompt = "<BOS>"
         prompt += (
             '"' + playlist.name + '":'
-            or " ".join(["<mask>"] * (playlist_length_distribution.sample() + 1)) + '":'
+            if playlist.name else  " ".join(["<mask>"] * (playlist_length_distribution.sample() + 1)) + '":'
         )
         candidate_tracks = ["".join(track.track_name.split(" ")) for track in playlist.tracks] + ["<mask>"]
         playlist_samples = random.choices(candidate_tracks, weights=[1. if i < len(candidate_tracks) - 1 else len(candidate_tracks) + 1 for i in range(len(candidate_tracks))], k=num_tracks)
@@ -39,15 +39,20 @@ def create_prompts(
 
 def parse_tracks(sentence: str) -> List[Track]:
     logger.trace(sentence)
-    title = sentence.split('": ')[0].split('"')[-1]
-    logger.trace(title)
-    track_candidates = sentence.split('": ')[1].replace('"', '').split('<EOS>')[0].split(' ')
+    title_and_tracks = sentence.split('": ')
+    if len(title_and_tracks) < 2:
+        logger.warning("Wrong sentence received... skipping")
+        return []
+    title = title_and_tracks[0].split('"')
+    if title:
+        logger.trace(title[-1])
+    track_candidates = title_and_tracks[1].replace('"', '').split(' ')
     tracks = [Track(track_name=track, track_uri=track) for track in track_candidates]
     logger.trace(tracks)
     return tracks
 
 def sample_sentence(
-    logits: torch.Tensor, k: int, temperature: float, tokenizer: PreTrainedTokenizerBase, top_k=50, top_p=1.0
+    logits: torch.Tensor, k: int, temperature: float, tokenizer: PreTrainedTokenizerBase, top_k=100, top_p=1.0
 ):
     scores = logits / temperature
     logscores = top_k_top_p_filtering(scores, top_k=top_k, top_p=top_p)
